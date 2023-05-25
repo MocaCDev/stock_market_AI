@@ -3,9 +3,8 @@ from datetime import datetime, timezone
 import requests, finnhub
 import yfinance as yf
 
-r = requests.get('https://api.polygon.io/v2/aggs/ticker/NVDA/range/1/day/2023-01-09/2023-01-09?apiKey=L3Z9OD0EVE1bmTmWDAO3llfwD1uMugpM')
-print(r.json())
-sys.exit(0)
+# This API was absolutely not correct FFS
+# r = requests.get('https://api.polygon.io/v2/aggs/ticker/NVDA/range/1/day/2023-01-09/2023-01-09?apiKey=L3Z9OD0EVE1bmTmWDAO3llfwD1uMugpM')
 
 date = str(datetime.now().date()).split('-')
 date = [int(i) for i in date]
